@@ -13,6 +13,8 @@
   font-family: "Noto Serif", serif;
   font-size: 4rem;
   line-height: 1.5;
+  border-left: #fb3640 10px solid;
+  padding-left: 25px;
 }
 .banner__left__section > p {
   color: #999999;
