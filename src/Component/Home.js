@@ -21,7 +21,7 @@ const Home = () => {
       <div className="banner__section">
         {/* banner left section */}
         <div className="banner__left__section" data-aos="fade-right">
-          <h1>Go Anywhere Live Anywhere</h1>
+          <h1>Check Into Your Desired Apartments</h1>
           <p>No leases. No landlords. No commitments.</p>
         </div>
 
