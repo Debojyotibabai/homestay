@@ -1,0 +1,86 @@
+/* banner section */
+.banner__section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+/* banner left section */
+.banner__left__section {
+  margin-top: 100px;
+  width: 45%;
+}
+.banner__left__section > h1 {
+  font-family: "Noto Serif", serif;
+  font-size: 4rem;
+  line-height: 1.5;
+}
+.banner__left__section > p {
+  color: #999999;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 70px;
+}
+
+/* banner right section */
+.banner__right__section {
+  width: 40%;
+}
+.banner__right__section > img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* banner form */
+.banner__form {
+  padding: 40px 50px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  border-radius: 10px;
+  transform: translateY(-230px);
+  background-color: #fff;
+}
+.banner__form > form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.banner__form > form > div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 80px;
+}
+.banner__form > form > div > label {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #444444;
+}
+.banner__form > form > div > input {
+  outline: none !important;
+  border: none !important;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fb3640;
+  margin-top: 25px;
+}
+.banner__form > form > div > input::placeholder {
+  color: #aaaaaa;
+  font-size: 1.15rem;
+}
+.banner__form > form > button {
+  padding: 15px 50px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  outline: none !important;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.banner__form > form > button:hover {
+  background-color: #fb3640;
+}

@@ -1,0 +1,73 @@
+/* navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+/* logo */
+.navbar > .logo {
+  text-decoration: none;
+  font-family: "Noto Serif", serif;
+  color: #000;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.navbar > .logo > span {
+  color: #fb3640;
+  font-family: "Noto Serif", serif;
+}
+
+/* navlinks */
+.navbar > ul {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar > ul > li {
+  list-style: none;
+  margin: 0 40px;
+}
+.navbar > ul > li > .navlink {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #777777;
+  transition: 0.3s;
+  font-weight: bold;
+}
+.navbar > ul > li > .navlink:hover {
+  color: #000;
+}
+.navbar > ul > li > .active__navlink {
+  color: #fb3640;
+}
+
+/* authentication */
+.navbar > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar > div > button {
+  border: none;
+  outline: none !important;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 40px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.navbar > div > button:hover {
+  color: #fb3640;
+}
+.navbar > div > .signup {
+  border: 1px solid #000;
+  border-radius: 50px;
+}
+.navbar > div > .signup:hover {
+  border: 1px solid #fb3640;
+}
