@@ -8,6 +8,12 @@ import "../Css/Home.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+// data
+import { CatagoryData } from "./CatagoryData";
+
+// component
+import CatagoryCard from "./CatagoryCard";
+
 const Home = () => {
   // aos init
   AOS.init({
@@ -35,7 +41,7 @@ const Home = () => {
       </div>
 
       {/* banner form */}
-      <div className="banner__form" data-aos="zoom-in">
+      <div className="banner__form" data-aos="fade-up">
         <form
           onSubmit={(e) => {
             e.preventDefault();
@@ -56,6 +62,20 @@ const Home = () => {
           </div>
           <button type="submit">Search</button>
         </form>
+      </div>
+
+      {/* catagory section */}
+      <div className="catagory__section">
+        {CatagoryData.map((eachData, eachDataIndex) => {
+          return (
+            <CatagoryCard
+              key={eachDataIndex}
+              img={eachData.img}
+              type={eachData.type}
+              details={eachData.details}
+            />
+          );
+        })}
       </div>
     </div>
   );

@@ -11,7 +11,7 @@
 }
 .banner__left__section > h1 {
   font-family: "Noto Serif", serif;
-  font-size: 3.8rem;
+  font-size: 3.5rem;
   line-height: 1.5;
   border-left: #fb3640 10px solid;
   padding-left: 30px;
@@ -20,7 +20,7 @@
 }
 .banner__left__section > p {
   color: #999999;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-top: 70px;
 }
@@ -87,4 +87,12 @@
 }
 .banner__form > form > button:hover {
   background-color: #fb3640;
+}
+
+/* catagory section */
+.catagory__section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 170px 0;
 }
