@@ -13,6 +13,7 @@ import About from "./Component/About";
 import Hotels from "./Component/Hotels";
 import Cars from "./Component/Cars";
 import Contact from "./Component/Contact";
+import Footer from "./Component/Footer";
 
 // css
 import "./App.css";
@@ -35,6 +36,9 @@ const App = () => {
           <Redirect to="/" />
         </Switch>
       </div>
+
+      {/* footer */}
+      <Footer />
     </Router>
   );
 };

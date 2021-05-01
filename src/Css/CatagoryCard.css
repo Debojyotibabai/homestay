@@ -22,7 +22,6 @@
   filter: grayscale(100%);
 }
 .catagory__card:hover img {
-  transform: scale(1.1);
   filter: grayscale(0);
 }
 .catagory__card > .catagory__card__details {

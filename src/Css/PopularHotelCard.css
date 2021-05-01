@@ -1,9 +1,9 @@
 .popular__hotel__card {
   width: 20%;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-radius: 10px;
   cursor: pointer;
+  overflow: hidden;
 }
 .popular__hotel__card > img {
   width: 100%;
@@ -15,25 +15,25 @@
 }
 .popular__hotel__card:hover img {
   filter: grayscale(0);
-}
-.popular__hotel__card > .details {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 15px 25px;
-}
-.popular__hotel__card > .details > .left__side {
-  width: 60%;
+  transform: scale(1.1);
 }
 .popular__hotel__card > h1 {
   font-family: "Noto Serif", serif;
   font-size: 1.3rem;
   color: #fb3640;
-  padding: 15px 15px 0;
+  padding: 20px 20px 10px;
+}
+.popular__hotel__card > .details {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 20px 25px;
+}
+.popular__hotel__card > .details > .left__side {
+  width: 60%;
 }
 .popular__hotel__card > .details > .left__side > h2 {
   font-size: 1rem;
-  margin-top: 10px;
 }
 .popular__hotel__card > .details > .left__side > p {
   margin: 15px 0 20px;

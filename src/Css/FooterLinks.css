@@ -1,0 +1,16 @@
+.footer__links > h1 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+.footer__links > li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.footer__links > li > p {
+  font-size: 1rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.footer__links > li > p:hover {
+  color: #fb3640;
+}

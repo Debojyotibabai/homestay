@@ -1,0 +1,50 @@
+.footer__section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 80px 100px 60px;
+  background-color: #f0f0f0;
+}
+.footer__section > .footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.footer__section > .footer > .left__side__footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 60%;
+}
+.footer__section > .footer > .right__side__footer > h1 {
+  font-family: "Noto Serif", serif;
+  margin-bottom: 30px;
+}
+.footer__section > .footer > .right__side__footer > form > input {
+  outline: none !important;
+  border: none;
+  border: 1px solid;
+  padding: 10px 15px;
+  font-size: 1rem;
+}
+.footer__section > .footer > .right__side__footer > form > input::placeholder {
+  font-size: 0.9rem;
+}
+.footer__section > .footer > .right__side__footer > form > button {
+  border: none !important;
+  outline: none !important;
+  padding: 11px 40px;
+  font-size: 1rem;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footer__section > .footer > .right__side__footer > form > button:hover {
+  background-color: #fb3640;
+}
+.footer__section > p {
+  font-weight: bold;
+  margin-top: 80px;
+  text-align: center;
+}
