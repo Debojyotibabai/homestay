@@ -14,6 +14,11 @@ import { CatagoryData } from "./CatagoryData";
 // component
 import CatagoryCard from "./CatagoryCard";
 
+// image
+import feature__apartment__img from "../Image/feature__apartment__img.svg";
+import feature__lifestyle__img from "../Image/feature__lifestyle__img.svg";
+import feature__yoga__img from "../Image/feature__yoga__img.svg";
+
 const Home = () => {
   // aos init
   AOS.init({
@@ -76,6 +81,37 @@ const Home = () => {
             />
           );
         })}
+      </div>
+
+      {/* feature section */}
+      <div className="feature__section">
+        <h1>A New Way of Living</h1>
+        <div className="features">
+          <div>
+            <img src={feature__apartment__img} alt="" />
+            <h1>Flexible Apartments</h1>
+            <p>
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout.
+            </p>
+          </div>
+          <div>
+            <img src={feature__lifestyle__img} alt="" />
+            <h1>All - Inslusive Lifestyle</h1>
+            <p>
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout.
+            </p>
+          </div>
+          <div>
+            <img src={feature__yoga__img} alt="" />
+            <h1>Hassle - Free Experience</h1>
+            <p>
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
