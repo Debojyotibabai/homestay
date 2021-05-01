@@ -10,14 +10,21 @@ import "aos/dist/aos.css";
 
 // data
 import { CatagoryData } from "./CatagoryData";
+import { PopularDestinationData } from "./PopolarDestinationData";
+import { PopularHotelData } from "./PopularHotelData";
 
 // component
 import CatagoryCard from "./CatagoryCard";
+import PopularHotelCard from "./PopularHotelCard";
 
 // image
 import feature__apartment__img from "../Image/feature__apartment__img.svg";
 import feature__lifestyle__img from "../Image/feature__lifestyle__img.svg";
 import feature__yoga__img from "../Image/feature__yoga__img.svg";
+
+// splide
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 
 const Home = () => {
   // aos init
@@ -30,13 +37,10 @@ const Home = () => {
     <div className="home__section">
       {/* banner section */}
       <div className="banner__section">
-        {/* banner left section */}
         <div className="banner__left__section" data-aos="fade-right">
           <h1>Check Into Your Desired Apartments</h1>
           <p>No leases. No landlords. No commitments.</p>
         </div>
-
-        {/* banner right section */}
         <div className="banner__right__section" data-aos="fade-left">
           <img
             src="https://images.unsplash.com/photo-1613144488732-19df6d7e8656?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80"
@@ -111,6 +115,55 @@ const Home = () => {
               the readable content of a page when looking at its layout.
             </p>
           </div>
+        </div>
+      </div>
+
+      {/* popular destination section */}
+      <div className="popular__destination__section">
+        <div className="left__side" data-aos="fade-right">
+          <h1>Popular Destinations</h1>
+        </div>
+        <Splide
+          className="right__side"
+          options={{
+            type: "loop",
+            gap: "1rem",
+            autoplay: true,
+            pauseOnHover: false,
+            resetProgress: false,
+            arrows: "slider",
+          }}
+        >
+          {PopularDestinationData.map((eachItem, eachItemIndex) => {
+            return (
+              <SplideSlide key={eachItemIndex}>
+                <img className="slider__img" src={eachItem.img} alt="" />
+                <h1 className="slider__text">{eachItem.title}</h1>
+              </SplideSlide>
+            );
+          })}
+        </Splide>
+      </div>
+
+      {/* popular hotel section */}
+      <div className="popular__hotel__section">
+        <h1>Best Deals</h1>
+
+        <div>
+          {PopularHotelData.map((eachData, eachDataIndex) => {
+            return (
+              <PopularHotelCard
+                key={eachDataIndex}
+                img={eachData.img}
+                name={eachData.name}
+                location={eachData.location}
+                landmark={eachData.landmark}
+                star={eachData.star}
+                price={eachData.price}
+                shift={eachData.shift}
+              />
+            );
+          })}
         </div>
       </div>
     </div>
