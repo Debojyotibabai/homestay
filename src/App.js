@@ -21,11 +21,11 @@ import "./App.css";
 const App = () => {
   return (
     <Router>
+      {/* navbar */}
+      <Navbar />
+
       {/* main section */}
       <div className="main__section">
-        {/* navbar */}
-        <Navbar />
-
         {/* pages */}
         <Switch>
           <Route exact path="/" component={Home} />

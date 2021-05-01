@@ -132,7 +132,8 @@ const Home = () => {
               autoplay: true,
               pauseOnHover: false,
               resetProgress: false,
-              arrows: "slider",
+              pagination: false,
+              arrows: false,
             }}
           >
             {PopularDestinationData.map((eachItem, eachItemIndex) => {

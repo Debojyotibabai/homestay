@@ -2,8 +2,13 @@
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 60px 0;
+  justify-content: space-between;
+  padding: 50px 150px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 }
 
 /* logo */
@@ -18,39 +23,42 @@
   color: #fb3640;
   font-family: "Noto Serif", serif;
 }
-
-/* navlinks */
-.navbar > ul {
-  flex: 1;
+.navbar > div {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.navbar > ul > li {
+/* navlinks */
+.navbar > div > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar > div > ul > li {
   list-style: none;
   margin: 0 40px;
 }
-.navbar > ul > li > .navlink {
+.navbar > div > ul > li > .navlink {
   text-decoration: none;
   font-size: 1.3rem;
   color: #777777;
   transition: 0.3s;
   font-weight: bold;
 }
-.navbar > ul > li > .navlink:hover {
+.navbar > div > ul > li > .navlink:hover {
   color: #000;
 }
-.navbar > ul > li > .active__navlink {
+.navbar > div > ul > li > .active__navlink {
   color: #fb3640;
 }
 
 /* authentication */
-.navbar > div {
+.navbar > div > .auth {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.navbar > div > button {
+.navbar > div > .auth > button {
   border: none;
   outline: none !important;
   background-color: #fff;
@@ -61,13 +69,13 @@
   cursor: pointer;
   transition: 0.3s;
 }
-.navbar > div > button:hover {
+.navbar > div > .auth > button:hover {
   color: #fb3640;
 }
-.navbar > div > .signup {
+.navbar > div > .auth > .signup {
   border: 1px solid #000;
   border-radius: 50px;
 }
-.navbar > div > .signup:hover {
+.navbar > div > .auth > .signup:hover {
   border: 1px solid #fb3640;
 }
