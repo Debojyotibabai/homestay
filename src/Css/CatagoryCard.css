@@ -65,3 +65,11 @@
     margin: 20px 0 30px;
   }
 }
+
+/* 360 screen */
+@media only screen and (max-width: 360px) {
+  .catagory__card {
+    width: 80%;
+    margin: 0 0 20px;
+  }
+}

@@ -91,10 +91,25 @@
     align-items: flex-start;
     flex-direction: column;
   }
+  .footer__section > .footer > .left__side__footer {
+    width: 80%;
+    margin: auto;
+  }
   .footer__section > .footer > .right__side__footer {
     margin: 30px auto;
   }
   .footer__section > p {
     margin-top: 70px;
+  }
+}
+
+/* 360 screen */
+@media only screen and (max-width: 360px) {
+  .footer__section > .footer > .right__side__footer > h1 {
+    font-size: 1.5rem;
+  }
+  .footer__section > .footer > .right__side__footer > form > input {
+    width: 80%;
+    margin-bottom: 15px;
   }
 }

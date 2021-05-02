@@ -164,3 +164,27 @@
     width: 75%;
   }
 }
+
+/* 3600 screen */
+@media only screen and (max-width: 360px) {
+  /* navbar */
+  .navbar {
+    padding: 30px;
+  }
+
+  /* authentication */
+  .navbar > .links > .auth {
+    flex-direction: column;
+  }
+  .navbar > .links > .auth > button {
+    margin: 20px 0;
+  }
+
+  /* logo */
+  .navbar > .logo {
+    font-size: 1.5rem;
+  }
+  .navbar > .links {
+    width: 80%;
+  }
+}
