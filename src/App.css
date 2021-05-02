@@ -11,6 +11,9 @@
 
 /* main section */
 .main__section {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
 }
 
@@ -22,11 +25,4 @@
   height: 80vh;
   font-weight: bold;
   font-size: 2rem;
-}
-
-/* media query 1200px */
-@media only screen and (min-width: 1200px) {
-  .main__section {
-    padding: 0 50px;
-  }
 }
