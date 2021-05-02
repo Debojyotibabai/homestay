@@ -255,11 +255,11 @@
 
   /* popular destination section */
   .popular__destination__section {
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 150px;
   }
   .popular__destination__section > .left__side > h1 {
-    font-size: 3.7rem;
+    font-size: 3.5rem;
   }
   .popular__destination__section > .right__side {
     width: 40%;
@@ -325,14 +325,14 @@
     align-items: flex-start;
     flex-direction: column;
     margin-left: 60px;
-    margin-top: 125px;
+    margin-top: 120px;
   }
   .popular__destination__section > .left__side > h1 {
     font-size: 2.5rem;
     margin-bottom: 50px;
   }
   .popular__destination__section > .right__side {
-    width: 60%;
+    width: 65%;
   }
   .slider__img {
     height: 300px;
@@ -343,7 +343,7 @@
 
   /* best deal section */
   .best__deal__section {
-    margin: 120px 0 150px;
+    margin: 130px 0 150px;
   }
   .best__deal__section > div {
     margin-top: 35px;
