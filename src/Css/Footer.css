@@ -15,6 +15,7 @@
   align-items: flex-start;
   justify-content: space-between;
   width: 60%;
+  flex-wrap: wrap;
 }
 .footer__section > .footer > .right__side__footer > h1 {
   font-family: "Noto Serif", serif;
@@ -47,4 +48,28 @@
   font-weight: bold;
   margin-top: 80px;
   text-align: center;
+}
+
+/* 1024 screen */
+@media only screen and (max-width: 1024px) {
+  .footer__section > .footer > .left__side__footer {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .footer__section > .footer > .right__side__footer > h1 {
+    font-size: 1.8rem;
+  }
+  .footer__section > p {
+    margin-top: 60px;
+  }
+}
+
+/* 768 screen */
+@media only screen and (max-width: 768px) {
+  .footer__section {
+    padding: 80px 0 50px;
+  }
+  .footer__section > .footer > .right__side__footer {
+    width: 80%;
+  }
 }

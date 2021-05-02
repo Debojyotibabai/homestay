@@ -23,45 +23,45 @@
   color: #fb3640;
   font-family: "Noto Serif", serif;
 }
-.navbar > div {
+.navbar > .links {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 /* navlinks */
-.navbar > div > ul {
+.navbar > .links > ul {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.navbar > div > ul > li {
+.navbar > .links > ul > li {
   list-style: none;
   margin: 0 40px;
 }
-.navbar > div > ul > li > .navlink {
+.navbar > .links > ul > li > .navlink {
   text-decoration: none;
   font-size: 1.3rem;
   color: #777777;
   transition: 0.3s;
   font-weight: bold;
 }
-.navbar > div > ul > li > .navlink:hover {
+.navbar > .links > ul > li > .navlink:hover {
   color: #000;
 }
-.navbar > div > ul > li > .active__navlink {
+.navbar > .links > ul > li > .active__navlink {
   color: #fb3640;
 }
 
 /* authentication */
-.navbar > div > .auth {
+.navbar > .links > .auth {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.navbar > div > .auth > button {
+.navbar > .links > .auth > button {
   border: none;
   outline: none !important;
-  background-color: #fff;
+  background: transparent;
   color: #000;
   font-size: 1.2rem;
   font-weight: bold;
@@ -69,13 +69,82 @@
   cursor: pointer;
   transition: 0.3s;
 }
-.navbar > div > .auth > button:hover {
+.navbar > .links > .auth > button:hover {
   color: #fb3640;
 }
-.navbar > div > .auth > .signup {
+.navbar > .links > .auth > .signup {
   border: 1px solid #000;
   border-radius: 50px;
 }
-.navbar > div > .auth > .signup:hover {
+.navbar > .links > .auth > .signup:hover {
   border: 1px solid #fb3640;
+}
+
+/* menu icon */
+.navbar > .navbar__menu {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+/* 1024 screen */
+@media only screen and (max-width: 1024px) {
+  /* navbar */
+  .navbar {
+    padding: 40px 60px;
+  }
+
+  .navbar > .links {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 40%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 3;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    transition: 0.7s;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+  }
+  .navbar > .links__active {
+    left: 0;
+  }
+  .navbar > .links::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* navlinks */
+  .navbar > .links > ul {
+    flex-direction: column;
+  }
+  .navbar > .links > ul > li {
+    margin: 30px 0;
+  }
+  /* authentication */
+  .navbar > .links > .auth {
+    margin-top: 40px;
+  }
+
+  /* menu icon */
+  .navbar > .navbar__menu {
+    display: block;
+  }
+}
+
+/* 768 screen */
+@media only screen and (max-width: 768px) {
+  /* navbar */
+  .navbar {
+    padding: 30px 60px;
+  }
+
+  .navbar > .links {
+    width: 50%;
+  }
 }

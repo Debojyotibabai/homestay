@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 // css
 import "../Css/Navbar.css";
 
+// icon
+import MenuIcon from "@material-ui/icons/Menu";
+import CloseIcon from "@material-ui/icons/Close";
+
 const Navbar = () => {
+  // navbar open value
+  const [value, setValue] = useState(false);
+
   return (
     // navbar
     <div className="navbar">
@@ -13,7 +20,7 @@ const Navbar = () => {
         Home<span>Stay</span>
       </NavLink>
 
-      <div>
+      <div className={value ? "links links__active" : "links"}>
         {/* navlinks */}
         <ul>
           <li>
@@ -22,6 +29,9 @@ const Navbar = () => {
               exact
               to="/"
               className="navlink"
+              onClick={() => {
+                setValue(!value);
+              }}
             >
               Home
             </NavLink>
@@ -32,6 +42,9 @@ const Navbar = () => {
               exact
               to="/about"
               className="navlink"
+              onClick={() => {
+                setValue(!value);
+              }}
             >
               About
             </NavLink>
@@ -42,6 +55,9 @@ const Navbar = () => {
               exact
               to="/hotels"
               className="navlink"
+              onClick={() => {
+                setValue(!value);
+              }}
             >
               Hotels
             </NavLink>
@@ -52,6 +68,9 @@ const Navbar = () => {
               exact
               to="/cars"
               className="navlink"
+              onClick={() => {
+                setValue(!value);
+              }}
             >
               Cars
             </NavLink>
@@ -62,6 +81,9 @@ const Navbar = () => {
               exact
               to="/contact"
               className="navlink"
+              onClick={() => {
+                setValue(!value);
+              }}
             >
               Contact
             </NavLink>
@@ -70,9 +92,33 @@ const Navbar = () => {
 
         {/* authentication */}
         <div className="auth">
-          <button className="signin">Sign in</button>
-          <button className="signup">Sign up</button>
+          <button
+            className="signin"
+            onClick={() => {
+              setValue(!value);
+            }}
+          >
+            Sign in
+          </button>
+          <button
+            className="signup"
+            onClick={() => {
+              setValue(!value);
+            }}
+          >
+            Sign up
+          </button>
         </div>
+      </div>
+
+      {/* menu icon */}
+      <div
+        className="navbar__menu"
+        onClick={() => {
+          setValue(!value);
+        }}
+      >
+        {value ? <CloseIcon /> : <MenuIcon />}
       </div>
     </div>
   );

@@ -16,7 +16,7 @@ export const CatagoryData = [
   {
     img:
       "https://images.unsplash.com/photo-1553736067-dc6931cc2277?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjJ8fHBldCUyMGJlZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-    type: "Pets always welcome",
+    type: "Pets are allow",
     details:
       "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
   },

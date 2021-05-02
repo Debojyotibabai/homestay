@@ -14,3 +14,11 @@
 .footer__links > li > p:hover {
   color: #fb3640;
 }
+
+/* 1024 screen */
+@media only screen and (max-width: 1024px) {
+  .footer__links {
+    width: 45%;
+    margin: 0 10px 40px;
+  }
+}

@@ -46,3 +46,19 @@
 .popular__hotel__card > .details > .right__side > span {
   color: #999999;
 }
+
+/* 1024 screen */
+@media only screen and (max-width: 1024px) {
+  .popular__hotel__card {
+    width: 32%;
+    margin: 30px;
+  }
+}
+
+/* 768 screen */
+@media only screen and (max-width: 768px) {
+  .popular__hotel__card {
+    width: 37%;
+    margin: 25px;
+  }
+}
