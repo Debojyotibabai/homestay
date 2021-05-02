@@ -62,3 +62,11 @@
     margin: 25px;
   }
 }
+
+/* 480 screen */
+@media only screen and (max-width: 480px) {
+  .popular__hotel__card {
+    width: 65%;
+    margin: 20px 0 30px;
+  }
+}
