@@ -61,7 +61,7 @@
 /* 480 screen */
 @media only screen and (max-width: 480px) {
   .catagory__card {
-    width: 65%;
+    width: 70%;
     margin: 20px 0 30px;
   }
 }
