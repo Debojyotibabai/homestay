@@ -44,7 +44,7 @@ export const PopularHotelData = [
     img:
       "https://images.unsplash.com/photo-1590490360182-c33d57733427?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGhvdGVsJTIwcm9vbXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     name: "Skyheight",
-    location: "Tahne, India",
+    location: "Thane, India",
     landmark: "3 km from city",
     star: (
       <>
