@@ -27,6 +27,6 @@
 /* media query 1200px */
 @media only screen and (min-width: 1200px) {
   .main__section {
-    padding: 0 200px;
+    padding: 0 50px;
   }
 }
